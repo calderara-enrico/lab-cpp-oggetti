@@ -25,20 +25,26 @@ string minuscolo(string s){
           prima lettera del nome + tutto il cognome (tutto minuscolo)
 */
 string usernameGenerator(string nome, string cognome){
-    return "da implementare";
+    string username = nome.substr(0,1);
+    username.insert(username.length(), cognome);
+    minuscolo(username);
+    return username;
 }
 
 /*
     TODO: Implementare la funzione affinchè, a partire da 1 stringa nella forma "Nome Cognome"
           generi in output una stringa contenente uno username utente nella forma:
           prima lettera del nome + tutto il cognome (tutto minuscolo)
-    
+
     Hint: rispetto alla funzione precedente, splittare (spezzare il nome dal cognome, basandosi sullo spazio)
           e ripetere la stessa logica. E' possibile anche evitare di ripetere la logica? Magari chiamando la stessa funzione sopra?
 
 */
 string usernameGenerator(string nomeCognome){
-    return "da implementare";
+    string nome = nomeCognome.substr(0,nomeCognome.find(" "));
+    string cognome = nomeCognome.substr(nomeCognome.find(" "),nomeCognome.length());
+    string username = usernameGenerator(nome,cognome);
+    return username;
 }
 
 // main con testing
