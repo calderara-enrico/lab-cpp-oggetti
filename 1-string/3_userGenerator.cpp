@@ -44,6 +44,8 @@ string usernameGenerator(string nomeCognome){
     string nome = nomeCognome.substr(0,nomeCognome.find(" "));
     string cognome = nomeCognome.substr(nomeCognome.find(" "),nomeCognome.length());
     string username = usernameGenerator(nome,cognome);
+    int x= username.find(" ");
+    username.erase(x,x);
     return username;
 }
 
@@ -56,12 +58,12 @@ int main()
 
     string nomeCognome = "Luca Bianchi";
 
-    string username1 = usernameGenerator(nome, cognome);
+    string username1 = minuscolo(usernameGenerator(nome, cognome));
 
-    string username2 = usernameGenerator(nomeCognome);
+    string username2 = minuscolo(usernameGenerator(nomeCognome));
 
     cout << "Primo utente: " << nome << " " << cognome << ". Username: " << username1;
-    cout << "Secondo utente: " << nomeCognome << ". Username: " << username2;
+    cout << " Secondo utente: " << nomeCognome << ". Username: " << username2;
 
     return 0;
 }
