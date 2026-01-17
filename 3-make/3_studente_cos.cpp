@@ -48,7 +48,8 @@ public:
 int main()
 {
     // TODO Istanziare un oggetto tramite il costruttore 
-
-
+    Studente("Enrico",17,6.5);
+    stampaStudente();
+    
     return 0;
 }
