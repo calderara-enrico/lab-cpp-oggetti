@@ -17,13 +17,12 @@ public:
         float p = L+l;
         return 2*p;
     }
-
-     void setL(float L1) {
+     void setl(float L1) {
         l = L1;
     }
-
-     void setl(float l1) {
-        L = l1;
+ void setL(float l1) {
+     do{L = l1
+         }while(l<L);
     }
 };
 
@@ -31,8 +30,8 @@ int main()
 {
     rettangolo ABCD;
 
-    ABCD.setL(6);
     ABCD.setl(4);
+    ABCD.setL(6);
 
     cout<<"perimetro Rettangolo: "<<ABCD.calcol2p()<<endl;
     cout<<"area Rettangolo: "<<ABCD.calcolArea()<<endl;
