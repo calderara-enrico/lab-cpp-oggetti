@@ -62,14 +62,16 @@ int main()
     /*********************** Visualizzazione degli oggetti *********************/
     // TODO stampare entrambi i prodotti con la funzione stampa dedicata
 
-    stampa();    
+    Mouse.stampa();
+    Tastiera.stampa();
 
     /*********************** Manipolazione degli oggetti ***********************/
     // TODO Applicare sconto del 20% al mouse e stampare il nuovo prezzo
-    applicaSconto(20);
-    stampa();
+    Mouse.applicaSconto(20);
+    Mouse.stampa();
 
     // TODO Cambiare prezzo alla tastiera (99.99) e stampare il nuovo prezzo
-    cambiaPrezzo(99.99);
+    Tastiera.cambiaPrezzo(99.99);
+    Tastiera.stampa();
     return 0;
 }
