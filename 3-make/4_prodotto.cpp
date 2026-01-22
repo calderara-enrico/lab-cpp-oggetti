@@ -56,22 +56,20 @@ int main()
     /*********************** Creazione di oggetti ******************************/
     // TODO creare un prodotto "Mouse" dal costo di 49.99
     // TODO creare un prodotto "Tastiera" dal costo di 129.99
-
-
-
+    prodotto("Mouse", 49.99);
+    prodotto("Tastiera", 129.99);
 
     /*********************** Visualizzazione degli oggetti *********************/
     // TODO stampare entrambi i prodotti con la funzione stampa dedicata
 
-
-
-    
+    stampa();    
 
     /*********************** Manipolazione degli oggetti ***********************/
     // TODO Applicare sconto del 20% al mouse e stampare il nuovo prezzo
-
+    applicaSconto(20);
+    stampa();
 
     // TODO Cambiare prezzo alla tastiera (99.99) e stampare il nuovo prezzo
-
+    cambiaPrezzo(99.99);
     return 0;
 }
