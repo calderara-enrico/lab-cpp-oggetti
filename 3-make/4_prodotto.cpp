@@ -17,7 +17,8 @@ public:
     Prodotto(string nomeProdotto, double prezzoProdotto): 
         nome(nomeProdotto), 
         prezzo(prezzoProdotto) 
-        {}
+        {// criteri es. if a>b cout b
+        }
 
     // Metodo che stampa il prodotto
     void stampa() {
